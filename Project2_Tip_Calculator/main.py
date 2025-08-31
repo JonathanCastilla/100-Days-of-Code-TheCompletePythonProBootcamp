@@ -1,6 +1,6 @@
 # This is a Tip calculator
 
-# Defining function to print band name generated
+# Defining function in order to calculate the payment for each person
 def tip_calculator():
     print("Welcome to the Tip Calculator!") # Adding a greeting for this code
     # Obtaining the data from user in order to calculate the bill for each one
