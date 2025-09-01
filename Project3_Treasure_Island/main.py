@@ -1,3 +1,13 @@
+# TREASURE ISLAND
+
+'''
+No. project: 3
+Name's project: Treasure Island
+Description: A tex-based adventure game using conditionals
+Author: Jonathan Eduardo Castilla Zamora
+'''
+
+
 print(r'''
 *******************************************************************************
           |                   |                  |                     |
