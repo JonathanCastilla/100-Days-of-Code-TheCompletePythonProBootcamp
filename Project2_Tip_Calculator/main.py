@@ -1,5 +1,14 @@
 # This is a Tip calculator
 
+'''
+No. project: 2
+Project name: Tip Calculator
+Description: Small utility to calculate tip and split bills
+Author: Jonathan Eduardo Castilla Zamora
+'''
+
+
+
 # Defining function in order to calculate the payment for each person
 def tip_calculator():
     print("Welcome to the Tip Calculator!") # Adding a greeting for this code
