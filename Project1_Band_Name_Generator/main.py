@@ -1,5 +1,15 @@
 # This is a Band Name Generator
 
+
+'''
+No. project: 1
+Project name: Band Name Generator
+Description: A simple beginner program generating funny band names.
+Author: Jonathan Eduardo Castilla Zamora
+'''
+
+
+
 # Defining function to print band name generated
 def band_name_generator():
     print("Welcome to the Band Name Generator!\n")
