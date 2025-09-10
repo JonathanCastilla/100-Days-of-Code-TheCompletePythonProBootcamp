@@ -25,11 +25,16 @@ A random word is chosen from a predefined word list, and the player must guess l
 - hangman_art.py (contains ASCII art for logo and stages)
 
 ## 📂 Project Structure
+
+```
 hangman-game/
 │── hangman.py         # Main game logic
 │── hangman_words.py   # Word list
 │── hangman_art.py     # ASCII art (logo + stages)
 │── README.md          # Project documentation
+```
+
+
 
 ## 📜 License
 
