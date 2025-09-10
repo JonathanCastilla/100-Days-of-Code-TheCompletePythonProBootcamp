@@ -20,16 +20,21 @@ A random word is chosen from a predefined word list, and the player must guess l
 1. Clone this repository
 2. Ensure you have the following files:
 
-- hangman.py (main game file)
+- main.py (main game file)
 - hangman_words.py (contains the word list)
 - hangman_art.py (contains ASCII art for logo and stages)
 
 ## 📂 Project Structure
+
+```
 hangman-game/
-│── hangman.py         # Main game logic
+│── main.py         # Main game logic
 │── hangman_words.py   # Word list
 │── hangman_art.py     # ASCII art (logo + stages)
 │── README.md          # Project documentation
+```
+
+
 
 ## 📜 License
 
