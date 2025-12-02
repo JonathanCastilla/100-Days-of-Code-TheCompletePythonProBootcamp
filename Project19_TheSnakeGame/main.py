@@ -75,15 +75,19 @@ while not game_board.is_game_over:
     # Checks if snake head goes beyond screen boundaries
     if not (-(WIDTH // 2) + WALL_OFFSET < snake.head.xcor() < (WIDTH // 2) - WALL_OFFSET) or \
        not (-(HEIGHT // 2) + WALL_OFFSET < snake.head.ycor() < (HEIGHT // 2) - WALL_OFFSET):
-        game_board.is_game_over = True
-        scoreboard.game_over()     # Displays “Game Over” message
+        #game_board.is_game_over = True
+        #scoreboard.game_over()     # Displays “Game Over” message
+        scoreboard.reset()
+        snake.reset()
 
     # --- Detect Collision with Tail ---
     # If the head collides with any part of its own body:
     for segment in snake.snake_segments[1:]:
         if snake.head.distance(segment) < SNAKE_DISTANCE_TO_COLLIDE_WITH_ITSELF:
-            game_board.is_game_over = True
-            scoreboard.game_over() # Ends the game and displays “Game Over” message
+            #game_board.is_game_over = True
+            #scoreboard.game_over() # Ends the game and displays “Game Over” message
+            scoreboard.reset()
+            snake.reset()
 
 # === Exit Behavior ===
 game_board.screen.exitonclick()  # Keeps window open until user clicks to close

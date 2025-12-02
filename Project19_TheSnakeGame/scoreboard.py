@@ -52,13 +52,31 @@ class Scoreboard(Turtle):
         self.goto(x=X_POS_SCOREBOARD, y=Y_POS_SCOREBOARD)  # Sets position near the top
         self.color("white")  # Text color
         self.score = 0  # Initial score
+        self.high_score = 0 # Highest score
         self.update_score()  # Renders the initial score display
 
     def update_score(self):
         """
         Writes the current score on the screen at the scoreboard’s position.
         """
-        self.write(f"Score: {self.score}", align=ALIGNMENT, font=FONT)
+        self.clear()
+
+        with open("data.txt", "r") as file:
+            self.high_score = int(file.read())
+
+        self.write(f"Score: {self.score} High Score: {self.high_score}", align=ALIGNMENT, font=FONT)
+
+    def reset(self):
+
+        # Updating the high score obtained by player
+        if self.score > self.high_score:
+            self.high_score = self.score
+
+            with open("data.txt", "w") as file:
+                file.write(str(self.high_score))
+
+        self.score = 0 # Reset the current score
+        self.update_score()
 
     def increase_score(self):
         """

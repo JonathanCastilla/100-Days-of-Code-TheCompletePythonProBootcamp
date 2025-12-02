@@ -83,6 +83,13 @@ class Snake:
         self.a_snake_segment.goto(position)  # Places the segment at the given coordinates
         self.snake_segments.append(self.a_snake_segment)
 
+    def reset(self):
+        for segment in self.snake_segments:
+            segment.goto(1000, 1000)
+        self.snake_segments.clear()
+        self.generate()
+        self.head = self.snake_segments[0]
+
     def extend(self):
         """
         Extends the snake’s body by adding a new segment
